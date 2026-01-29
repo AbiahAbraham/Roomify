@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+  font-family: system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f4f6fb;
+}
+
+/* Header */
+.header {
+  padding: 16px;
+  background: linear-gradient(135deg, #5f6cff, #7b8cff);
+  color: white;
+  text-align: center;
+}
+
+/* Feed */
+.feed {
+  padding: 16px;
+}
+
+/* Match Card */
+.match-card {
+  background: white;
+  border-radius: 16px;
+  padding: 16px;
+  display: flex;
+  gap: 16px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+.match-card img {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Info */
+.match-info h2 {
+  margin: 0;
+}
+
+.playlist-name {
+  color: #666;
+  font-size: 14px;
+}
+
+.match-score {
+  display: inline-block;
+  margin: 8px 0;
+  padding: 4px 8px;
+  background: #e6e9ff;
+  color: #4a5cff;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+/* Tags */
+.tags span {
+  display: inline-block;
+  margin-right: 6px;
+  font-size: 12px;
+  background: #f1f1f1;
+  padding: 4px 6px;
+  border-radius: 6px;
+}
+
+/* Actions */
+.actions {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.actions button {
+  border: none;
+  background: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Bottom Nav */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background: white;
+  padding: 12px 0;
+  border-top: 1px solid #eee;
+}
+
+.bottom-nav a {
+  text-decoration: none;
+  color: #999;
+}
+
+.bottom-nav .active {
+  color: #5f6cff;
+  font-weight: bold;
+}
